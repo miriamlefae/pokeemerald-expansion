@@ -8,6 +8,8 @@
 #define NUM_TASKS 16
 #define NUM_TASK_DATA 16
 
+#define TASK_DATA(...) struct { s16 __VA_ARGS__; } *tData = (void *)gTasks[taskId].data
+
 typedef void (*TaskFunc)(u8 taskId);
 
 struct Task

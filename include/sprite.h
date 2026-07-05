@@ -9,6 +9,8 @@
 // Given to SetSpriteMatrixAnchor to skip anchoring one of the coords.
 #define NO_ANCHOR 0x800
 
+#define SPRITE_DATA(_sprite, ...) struct { s16 __VA_ARGS__; } *sData = (void *)_sprite->data
+
 struct SpriteSheet
 {
     const void *data;  // Raw uncompressed pixel data
