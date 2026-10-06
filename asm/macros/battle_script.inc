@@ -2128,3 +2128,7 @@
 	callnative BS_CheckIfPlayerInSafeArea
 	.4byte \jumpInstr
 	.endm
+
+	.macro givepartyexp
+	callnative BS_givepartyexp
+	.endm
